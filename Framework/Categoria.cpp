@@ -3,10 +3,16 @@ using namespace std;
 
 class Categoria
 {
+	string nombre;
 public:
-	Categoria()
+	Categoria(string nombre)
 	{
-		
+		this->nombre = nombre;
+	}
+
+	void setNombre(string nombre)
+	{
+		this->nombre = nombre
 	}
 
 };

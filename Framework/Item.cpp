@@ -4,11 +4,29 @@ using namespace std;
 
 class Item
 {
+	//-----------------------------------------------------------------------
+	//Atributos
+	//-----------------------------------------------------------------------
+	/**
+	*Cateogoría a la cual pertenece el item
+	*/
 	Categoria categoria;
+	/**
+	*Nombre del item
+	*/
 	string nombre;
+	/**
+	*Ancho del item
+	*/
 	int ancho;
+	/**
+	*Alto del item
+	*/
 	int alto;
 
+	//-----------------------------------------------------------------------
+	//Métodos
+	//-----------------------------------------------------------------------
 public:
 	Item(string nombre, int ancho, int alto)
 	{

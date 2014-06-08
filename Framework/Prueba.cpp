@@ -6,16 +6,36 @@ using namespace std;
 
 class Prueba
 {
+	//-----------------------------------------------------------------------
+	//Atributos
+	//-----------------------------------------------------------------------
+	/**
+	*Tiempo que durará la realización de la prueba
+	*/
 	double tiempo;
+	/**
+	*Lista de items que componen la prueba
+	*/
 	vector<Item*> items;
+	/**
+	*Pacientes que serán sometidos a la prueba
+	*/
 	vector<Paciente*> pacientes;
+	/**
+	*Rango de la prueba
+	*/
+	Rango rango;
 
+	//-----------------------------------------------------------------------
+	//Métodos
+	//-----------------------------------------------------------------------
 public:
-	Prueba()
+	Prueba(Rango rango)
 	{
 		items = new vector<Item*>();
 		categorias = new vector<Categoria*>();
 		pacientes = new vector<Paciente*>();
+		this->rango = rango;
 	}
 
 	bool agregarPaciente(string nombre, string apellido, int edad, char sexo) 
@@ -25,11 +45,11 @@ public:
 		pacientes.pull_back(paciente);
 		if(pacientes.size() == vectorSize + 1)
 		{
-			return TRUE;
+			return true;
 		}
 		else 
 		{
-			return FALSE;
+			return false;
 		}
 	}
 
@@ -41,11 +61,11 @@ public:
 		items.pull_back(item);
 		if(items.size() == vectorSize + 1)
 		{
-			return TRUE;
+			return true;
 		}
 		else 
 		{
-			return FALSE;
+			return false;
 		}
 	}
 
@@ -67,6 +87,11 @@ public:
 	void setItems(vector<Item*> items)
 	{
 		this->items = intems;
+	}
+
+	void setRango(Rango rango) 
+	{
+		this->rango = rango;
 	}
 	
 };

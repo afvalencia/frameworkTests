@@ -3,12 +3,33 @@ using namespace std;
 
 class Paciente
 {
+	//-----------------------------------------------------------------------
+	//Atributos
+	//-----------------------------------------------------------------------
+	/**
+	*Nombre el paciente
+	*/
 	string nombre;
+	/**
+	*Apellido del paciente
+	*/
 	string apellido;
+	/**
+	*Edad del paciente
+	*/
 	int edad;
+	/**
+	*Sexo del paciente
+	*/
 	char sexo;
+	/**
+	*Puntaje obtenido por el paciente en una prueba
+	*/
 	int puntaje;
-	
+
+	//-----------------------------------------------------------------------
+	//Métodos
+	//-----------------------------------------------------------------------
 public:
 	Paciente(string nombre, string apellido, int edad, char sexo) 
 	{

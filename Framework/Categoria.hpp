@@ -1,5 +1,4 @@
 #include <string>
-using namespace std;
 
 class Categoria
 {
@@ -9,7 +8,7 @@ class Categoria
 	/**
 	*Nombre de la categoría
 	*/
-	string nombre;
+	std::string nombre;
 
 	//-----------------------------------------------------------------------
 	//Métodos
@@ -20,18 +19,17 @@ public:
 	*<b>post: </b> Se creó una categoría con el nombre pasado por parámetro. <br>
 	*@param nombre - corresponde al nombre de la categoría. nombre != NULL
 	*/
-	Categoria(string nombre)
+	Categoria(std::string nombre)
 	{
 		this->nombre = nombre;
 	}
-
 	/**
 	*
 	*
 	*/
-	void setNombre(string nombre)
+	void setNombre(std::string nombre)
 	{
-		this->nombre = nombre
+		this->nombre = nombre;
 	}
 
 };

@@ -1,19 +1,19 @@
 #include <string>
-using namespace std;
 
 class Paciente
 {
+public:
 	//-----------------------------------------------------------------------
 	//Atributos
 	//-----------------------------------------------------------------------
 	/**
 	*Nombre el paciente
 	*/
-	string nombre;
+	std::string nombre;
 	/**
 	*Apellido del paciente
 	*/
-	string apellido;
+	std::string apellido;
 	/**
 	*Edad del paciente
 	*/
@@ -30,8 +30,8 @@ class Paciente
 	//-----------------------------------------------------------------------
 	//Métodos
 	//-----------------------------------------------------------------------
-public:
-	Paciente(string nombre, string apellido, int edad, char sexo) 
+
+	Paciente(std::string nombre, std::string apellido, int edad, char sexo) 
 	{
 		this->nombre = nombre;
 		this->apellido = apellido;
@@ -39,13 +39,21 @@ public:
 		this->sexo = sexo;
 		puntaje = 0;
 	}
+	Paciente()
+	{
+		this->nombre = "";
+		this->apellido = "";
+		this->edad = 0;
+		this->sexo = 'M';
+		puntaje = 0;
+	}
 
-	void setNombre(string nombre) 
+	void setNombre(std::string nombre) 
 	{
 		this->nombre = nombre;
 	}
 
-	void setApellido(string apellido) 
+	void setApellido(std::string apellido) 
 	{
 		this->apellido = apellido;
 	}
@@ -63,5 +71,29 @@ public:
 	void setPuntaje(int puntaje)
 	{
 		this->puntaje = puntaje;	
+	}
+	std::string getNombre() 
+	{
+		return this->nombre;
+	}
+
+	std::string getApellido() 
+	{
+		return this->apellido;
+	}
+
+	int getEdad()
+	{
+		return this->edad;
+	}
+
+	char getSexo() 
+	{
+		return this->sexo;
+	}
+
+	int getPuntaje()
+	{
+		return this->puntaje;	
 	}
 };

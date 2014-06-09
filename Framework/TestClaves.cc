@@ -121,7 +121,7 @@ int PreguntarPrueba(Item I)
 	std::cout<<I.getRespuesta()<<std::endl;
 	std::string R;
 	std::cin>>R;
-	if(R==I.getNombrePregunta())
+	if(R==I.getNombreRespuesta())
 		return 1;
 	else
 		return 0;
@@ -133,7 +133,7 @@ void PreguntarPractica(Item I)
 	std::cout<<I.getRespuesta()<<std::endl;
 	std::string R;
 	std::cin>>R;
-	if(R==I.getNombrePregunta())
+	if(R==I.getNombreRespuesta())
 		std::cout<<"Correcto!"<<std::endl;
 	else
 		std::cout<<"Mal!"<<std::endl;
@@ -161,7 +161,7 @@ int comenzarPrueba()
 	std::cout<<"¿Estas listo para comenzar?, escribe comenzar y presiona enter para hacerlo"<<std::endl;
 	std::cin>>h;
 	for(auto e:ActualPrueba.getItems())
-		puntos+=PreguntarPrueba(e);
+		puntos=puntos+PreguntarPrueba(e);
 	ActualPaciente.setPuntaje(puntos);
 	std::cout<<ActualPrueba.generarReporte()<<" De 21 posibles";
 	

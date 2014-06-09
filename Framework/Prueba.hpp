@@ -113,7 +113,7 @@ public:
 		puntajes=stream2.str();
 
 
- 		return "El paciente " + this->paciente.nombre + " " + this->paciente.apellido + ", con " + edads + " obtuvo un puntaje de " + puntajes;
+ 		return "El paciente " + this->paciente.nombre + " " + this->paciente.apellido + ", con " + edads + " obtuvo un puntaje de ";
 	}
 
 	

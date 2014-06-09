@@ -163,7 +163,7 @@ int comenzarPrueba()
 	for(auto e:ActualPrueba.getItems())
 		puntos=puntos+PreguntarPrueba(e);
 	ActualPaciente.setPuntaje(puntos);
-	std::cout<<ActualPrueba.generarReporte()<<" De 21 posibles";
+	std::cout<<ActualPrueba.generarReporte()<<puntos<<" De 21 posibles"<<std::endl;
 	
 
 }

@@ -131,7 +131,7 @@ vector< vector<int> > vistaVector(vector<Item> v3, int ubicacion){
                 }
             }
 			if(cont == ubicacion and not buscar(cont,v3)){
-                v2.push_back(-1);
+                v2[j] = -1;
             }			
             else{
                  v2.push_back(-2);

@@ -1,0 +1,224 @@
+\hypertarget{class_paciente}{\section{Paciente Class Reference}
+\label{class_paciente}\index{Paciente@{Paciente}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_paciente_ad669d580c3afbbf010c582060a7290b8}{Paciente} (std\+::string \hyperlink{class_paciente_aa038dc802c746b2ceb990400aca1bf92}{nombre}, std\+::string \hyperlink{class_paciente_adaa241cbab07b786730e27b82e303616}{apellido}, int \hyperlink{class_paciente_a5a873f7b3df047548f58ec7a9d4ca29c}{edad}, char \hyperlink{class_paciente_aaf0b95139b3d6bf6f475b52050b8613c}{sexo})
+\item 
+\hyperlink{class_paciente_a97757a37cee1fed63091afd4fced0263}{Paciente} ()
+\item 
+void \hyperlink{class_paciente_a3d6dc888957a7485e85606181f528e0c}{set\+Nombre} (std\+::string \hyperlink{class_paciente_aa038dc802c746b2ceb990400aca1bf92}{nombre})
+\item 
+void \hyperlink{class_paciente_a30883cdacfd7ee5d38c7f579a956bdbc}{set\+Apellido} (std\+::string \hyperlink{class_paciente_adaa241cbab07b786730e27b82e303616}{apellido})
+\item 
+void \hyperlink{class_paciente_ab82e12433466172891e1bfa141ffbeb3}{set\+Edad} (int \hyperlink{class_paciente_a5a873f7b3df047548f58ec7a9d4ca29c}{edad})
+\item 
+void \hyperlink{class_paciente_ac2f26fb57513c075fe5bb23668693d5f}{set\+Sexo} (char \hyperlink{class_paciente_aaf0b95139b3d6bf6f475b52050b8613c}{sexo})
+\item 
+void \hyperlink{class_paciente_a9f4c05ae7dd16c3a9c5754ee1f8e13b5}{set\+Puntaje} (int \hyperlink{class_paciente_a42560c348305a28a57a59294294f59f8}{puntaje})
+\item 
+std\+::string \hyperlink{class_paciente_aa00955a7fd2b8e1992ef8bbdc4bc05d1}{get\+Nombre} ()
+\item 
+std\+::string \hyperlink{class_paciente_a35268fbb91b9266d4ed472104e16097e}{get\+Apellido} ()
+\item 
+int \hyperlink{class_paciente_a1da1c5831ca77c232862b99e34ffaf50}{get\+Edad} ()
+\item 
+char \hyperlink{class_paciente_a9ae18f33cfaa0bd38cc653220fab5c63}{get\+Sexo} ()
+\item 
+int \hyperlink{class_paciente_a38b72c2025e29dfd0f2313273360a67f}{get\+Puntaje} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_paciente_aa038dc802c746b2ceb990400aca1bf92}{nombre}
+\item 
+std\+::string \hyperlink{class_paciente_adaa241cbab07b786730e27b82e303616}{apellido}
+\item 
+int \hyperlink{class_paciente_a5a873f7b3df047548f58ec7a9d4ca29c}{edad}
+\item 
+char \hyperlink{class_paciente_aaf0b95139b3d6bf6f475b52050b8613c}{sexo}
+\item 
+int \hyperlink{class_paciente_a42560c348305a28a57a59294294f59f8}{puntaje}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_paciente_ad669d580c3afbbf010c582060a7290b8}{\index{Paciente@{Paciente}!Paciente@{Paciente}}
+\index{Paciente@{Paciente}!Paciente@{Paciente}}
+\subsubsection[{Paciente}]{\setlength{\rightskip}{0pt plus 5cm}Paciente\+::\+Paciente (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{nombre, }
+\item[{std\+::string}]{apellido, }
+\item[{int}]{edad, }
+\item[{char}]{sexo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_ad669d580c3afbbf010c582060a7290b8}
+Crea un paciente con su puntaje en cero. ~\newline
+ {\bfseries \begin{DoxyPostcond}{Postcondition}
+\+:  Se creó un paciente con la información pasada por parámetro. ~\newline
+ 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & -\/ corresponde al nombre del paciente. nombre != N\+U\+L\+L -\/ nombre != \char`\"{}\char`\"{} \\
+\hline
+{\em apellido} & -\/ corresponde al apellido del paciente. apellido != N\+U\+L\+L -\/ apellido != \char`\"{}\char`\"{} \\
+\hline
+{\em edad} & -\/ corresponde a la edad del paciente. edad $>$ 0 \\
+\hline
+{\em sexo} & -\/ corresponde al sexo del paciente \\
+\hline
+\end{DoxyParams}
+}\hypertarget{class_paciente_a97757a37cee1fed63091afd4fced0263}{\index{Paciente@{Paciente}!Paciente@{Paciente}}
+\index{Paciente@{Paciente}!Paciente@{Paciente}}
+\subsubsection[{Paciente}]{\setlength{\rightskip}{0pt plus 5cm}Paciente\+::\+Paciente (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a97757a37cee1fed63091afd4fced0263}
+Crea un paciente sin nombre, apellido o edad, con su puntaje en cero. ~\newline
+ {\bfseries \begin{DoxyPostcond}{Postcondition}
+\+:  Se creó un paciente \char`\"{}vacío\char`\"{}, con sus nombres y apellidos en blanco, su edad y sexo son cero y masculino respectivamente 
+\end{DoxyPostcond}
+}
+
+\subsection{Member Function Documentation}
+\hypertarget{class_paciente_a35268fbb91b9266d4ed472104e16097e}{\index{Paciente@{Paciente}!get\+Apellido@{get\+Apellido}}
+\index{get\+Apellido@{get\+Apellido}!Paciente@{Paciente}}
+\subsubsection[{get\+Apellido}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Paciente\+::get\+Apellido (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a35268fbb91b9266d4ed472104e16097e}
+Retorna el apellido del paciente \begin{DoxyReturn}{Returns}
+apellido 
+\end{DoxyReturn}
+\hypertarget{class_paciente_a1da1c5831ca77c232862b99e34ffaf50}{\index{Paciente@{Paciente}!get\+Edad@{get\+Edad}}
+\index{get\+Edad@{get\+Edad}!Paciente@{Paciente}}
+\subsubsection[{get\+Edad}]{\setlength{\rightskip}{0pt plus 5cm}int Paciente\+::get\+Edad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a1da1c5831ca77c232862b99e34ffaf50}
+Retorna la edad del paciente \begin{DoxyReturn}{Returns}
+edad 
+\end{DoxyReturn}
+\hypertarget{class_paciente_aa00955a7fd2b8e1992ef8bbdc4bc05d1}{\index{Paciente@{Paciente}!get\+Nombre@{get\+Nombre}}
+\index{get\+Nombre@{get\+Nombre}!Paciente@{Paciente}}
+\subsubsection[{get\+Nombre}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Paciente\+::get\+Nombre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_aa00955a7fd2b8e1992ef8bbdc4bc05d1}
+Retorna el nombre del paciente \begin{DoxyReturn}{Returns}
+nombre 
+\end{DoxyReturn}
+\hypertarget{class_paciente_a38b72c2025e29dfd0f2313273360a67f}{\index{Paciente@{Paciente}!get\+Puntaje@{get\+Puntaje}}
+\index{get\+Puntaje@{get\+Puntaje}!Paciente@{Paciente}}
+\subsubsection[{get\+Puntaje}]{\setlength{\rightskip}{0pt plus 5cm}int Paciente\+::get\+Puntaje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a38b72c2025e29dfd0f2313273360a67f}
+Retorna el puntaje del empleado \begin{DoxyReturn}{Returns}
+puntaje 
+\end{DoxyReturn}
+\hypertarget{class_paciente_a9ae18f33cfaa0bd38cc653220fab5c63}{\index{Paciente@{Paciente}!get\+Sexo@{get\+Sexo}}
+\index{get\+Sexo@{get\+Sexo}!Paciente@{Paciente}}
+\subsubsection[{get\+Sexo}]{\setlength{\rightskip}{0pt plus 5cm}char Paciente\+::get\+Sexo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a9ae18f33cfaa0bd38cc653220fab5c63}
+Retorna el sexo del paciente \begin{DoxyReturn}{Returns}
+sexo 
+\end{DoxyReturn}
+\hypertarget{class_paciente_a30883cdacfd7ee5d38c7f579a956bdbc}{\index{Paciente@{Paciente}!set\+Apellido@{set\+Apellido}}
+\index{set\+Apellido@{set\+Apellido}!Paciente@{Paciente}}
+\subsubsection[{set\+Apellido}]{\setlength{\rightskip}{0pt plus 5cm}void Paciente\+::set\+Apellido (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{apellido}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a30883cdacfd7ee5d38c7f579a956bdbc}
+Cambia el apellido del paciente. ~\newline
+ {\bfseries post\+: } this-\/$>$apellido == apellido. 
+\begin{DoxyParams}{Parameters}
+{\em apellido} & -\/ el nuevo apellido del paciente. apellido != N\+U\+L\+L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_paciente_ab82e12433466172891e1bfa141ffbeb3}{\index{Paciente@{Paciente}!set\+Edad@{set\+Edad}}
+\index{set\+Edad@{set\+Edad}!Paciente@{Paciente}}
+\subsubsection[{set\+Edad}]{\setlength{\rightskip}{0pt plus 5cm}void Paciente\+::set\+Edad (
+\begin{DoxyParamCaption}
+\item[{int}]{edad}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_ab82e12433466172891e1bfa141ffbeb3}
+Cambia la edad del paciente. ~\newline
+ {\bfseries post\+: } this-\/$>$edad== edad. 
+\begin{DoxyParams}{Parameters}
+{\em edad} & -\/ la nueva edad del paciente. edad $>$ 0. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_paciente_a3d6dc888957a7485e85606181f528e0c}{\index{Paciente@{Paciente}!set\+Nombre@{set\+Nombre}}
+\index{set\+Nombre@{set\+Nombre}!Paciente@{Paciente}}
+\subsubsection[{set\+Nombre}]{\setlength{\rightskip}{0pt plus 5cm}void Paciente\+::set\+Nombre (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{nombre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a3d6dc888957a7485e85606181f528e0c}
+Cambia el nombre del paciente. ~\newline
+ {\bfseries post\+: } this-\/$>$nombre == nombre. 
+\begin{DoxyParams}{Parameters}
+{\em nombre} & -\/ el nuevo nombre del paciente. nombre != N\+U\+L\+L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_paciente_a9f4c05ae7dd16c3a9c5754ee1f8e13b5}{\index{Paciente@{Paciente}!set\+Puntaje@{set\+Puntaje}}
+\index{set\+Puntaje@{set\+Puntaje}!Paciente@{Paciente}}
+\subsubsection[{set\+Puntaje}]{\setlength{\rightskip}{0pt plus 5cm}void Paciente\+::set\+Puntaje (
+\begin{DoxyParamCaption}
+\item[{int}]{puntaje}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_a9f4c05ae7dd16c3a9c5754ee1f8e13b5}
+Cambia el puntaje del paciente. ~\newline
+ {\bfseries post\+: } this-\/$>$puntaje == puntaje. 
+\begin{DoxyParams}{Parameters}
+{\em puntaje} & -\/ el nuevo puntaje del paciente. puntaje $>$= 0. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_paciente_ac2f26fb57513c075fe5bb23668693d5f}{\index{Paciente@{Paciente}!set\+Sexo@{set\+Sexo}}
+\index{set\+Sexo@{set\+Sexo}!Paciente@{Paciente}}
+\subsubsection[{set\+Sexo}]{\setlength{\rightskip}{0pt plus 5cm}void Paciente\+::set\+Sexo (
+\begin{DoxyParamCaption}
+\item[{char}]{sexo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_paciente_ac2f26fb57513c075fe5bb23668693d5f}
+Cambia el sexo del paciente. ~\newline
+ {\bfseries post\+: } this-\/$>$sexo == sexo. 
+\begin{DoxyParams}{Parameters}
+{\em sexo} & -\/ el nuevo sexo del paciente. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_paciente_adaa241cbab07b786730e27b82e303616}{\index{Paciente@{Paciente}!apellido@{apellido}}
+\index{apellido@{apellido}!Paciente@{Paciente}}
+\subsubsection[{apellido}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Paciente\+::apellido}}\label{class_paciente_adaa241cbab07b786730e27b82e303616}
+Apellido del paciente \hypertarget{class_paciente_a5a873f7b3df047548f58ec7a9d4ca29c}{\index{Paciente@{Paciente}!edad@{edad}}
+\index{edad@{edad}!Paciente@{Paciente}}
+\subsubsection[{edad}]{\setlength{\rightskip}{0pt plus 5cm}int Paciente\+::edad}}\label{class_paciente_a5a873f7b3df047548f58ec7a9d4ca29c}
+Edad del paciente \hypertarget{class_paciente_aa038dc802c746b2ceb990400aca1bf92}{\index{Paciente@{Paciente}!nombre@{nombre}}
+\index{nombre@{nombre}!Paciente@{Paciente}}
+\subsubsection[{nombre}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Paciente\+::nombre}}\label{class_paciente_aa038dc802c746b2ceb990400aca1bf92}
+Nombre el paciente \hypertarget{class_paciente_a42560c348305a28a57a59294294f59f8}{\index{Paciente@{Paciente}!puntaje@{puntaje}}
+\index{puntaje@{puntaje}!Paciente@{Paciente}}
+\subsubsection[{puntaje}]{\setlength{\rightskip}{0pt plus 5cm}int Paciente\+::puntaje}}\label{class_paciente_a42560c348305a28a57a59294294f59f8}
+Puntaje obtenido por el paciente en una prueba \hypertarget{class_paciente_aaf0b95139b3d6bf6f475b52050b8613c}{\index{Paciente@{Paciente}!sexo@{sexo}}
+\index{sexo@{sexo}!Paciente@{Paciente}}
+\subsubsection[{sexo}]{\setlength{\rightskip}{0pt plus 5cm}char Paciente\+::sexo}}\label{class_paciente_aaf0b95139b3d6bf6f475b52050b8613c}
+Sexo del paciente 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Paciente.\+hpp\end{DoxyCompactItemize}

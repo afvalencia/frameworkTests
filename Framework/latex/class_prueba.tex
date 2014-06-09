@@ -1,0 +1,123 @@
+\hypertarget{class_prueba}{\section{Prueba Class Reference}
+\label{class_prueba}\index{Prueba@{Prueba}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_prueba_a01c77dc54f08cb4098b38167e48b5e04}{Prueba} (\hyperlink{class_rango}{Rango} rango, \hyperlink{class_paciente}{Paciente} paciente, std\+::vector$<$ \hyperlink{class_item}{Item} $>$ items)
+\item 
+void \hyperlink{class_prueba_a0800d446de537a615de474c270bebd75}{set\+Tiempo} (double tiempo)
+\item 
+void \hyperlink{class_prueba_ac45d0bc033c8f2b1fd25f10537328ae4}{set\+Pacientes} (\hyperlink{class_paciente}{Paciente} paciente)
+\item 
+void \hyperlink{class_prueba_a0b3baf595028b7aa32b95e2c3c2729ea}{set\+Items} (std\+::vector$<$ \hyperlink{class_item}{Item} $>$ items)
+\item 
+void \hyperlink{class_prueba_a682b5c82a1b41741c4e578b63b4b40bd}{set\+Rango} (\hyperlink{class_rango}{Rango} rango)
+\item 
+std\+::vector$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_prueba_ae9c322c5cda5e7f75fb0d22520a57f06}{get\+Items} ()
+\item 
+std\+::string \hyperlink{class_prueba_aa81709ee71b93659f5a2826d3da7c182}{generar\+Reporte} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_prueba_a01c77dc54f08cb4098b38167e48b5e04}{\index{Prueba@{Prueba}!Prueba@{Prueba}}
+\index{Prueba@{Prueba}!Prueba@{Prueba}}
+\subsubsection[{Prueba}]{\setlength{\rightskip}{0pt plus 5cm}Prueba\+::\+Prueba (
+\begin{DoxyParamCaption}
+\item[{{\bf Rango}}]{rango, }
+\item[{{\bf Paciente}}]{paciente, }
+\item[{std\+::vector$<$ {\bf Item} $>$}]{items}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_a01c77dc54f08cb4098b38167e48b5e04}
+Crea una prueba. ~\newline
+ {\bfseries \begin{DoxyPostcond}{Postcondition}
+\+:  Se creó una prueba con la información pasada por parámetro. ~\newline
+ 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em rango} & -\/ corresponde al rango de la prueba. rango != N\+U\+L\+L \\
+\hline
+{\em paciente} & -\/ corresponde al paciente al cual se le realizará la prueba. paciente != N\+U\+L\+L \\
+\hline
+{\em items} & -\/ corresponde la lista de items que componen la prueba. \\
+\hline
+\end{DoxyParams}
+}
+
+\subsection{Member Function Documentation}
+\hypertarget{class_prueba_aa81709ee71b93659f5a2826d3da7c182}{\index{Prueba@{Prueba}!generar\+Reporte@{generar\+Reporte}}
+\index{generar\+Reporte@{generar\+Reporte}!Prueba@{Prueba}}
+\subsubsection[{generar\+Reporte}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Prueba\+::generar\+Reporte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_aa81709ee71b93659f5a2826d3da7c182}
+Genera un reporte de los resultados de una prueba realizada a un paciente {\bfseries pre\+: } el paciente al cual se le realizó la prueba debe ser diferente de N\+U\+L\+L {\bfseries post\+: } se generó un reporte indicando los datos del paciente junto con su puntaje obtenido. \hypertarget{class_prueba_ae9c322c5cda5e7f75fb0d22520a57f06}{\index{Prueba@{Prueba}!get\+Items@{get\+Items}}
+\index{get\+Items@{get\+Items}!Prueba@{Prueba}}
+\subsubsection[{get\+Items}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Item}$>$ Prueba\+::get\+Items (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_ae9c322c5cda5e7f75fb0d22520a57f06}
+Retorna la lista de items de la prueba \begin{DoxyReturn}{Returns}
+items 
+\end{DoxyReturn}
+\hypertarget{class_prueba_a0b3baf595028b7aa32b95e2c3c2729ea}{\index{Prueba@{Prueba}!set\+Items@{set\+Items}}
+\index{set\+Items@{set\+Items}!Prueba@{Prueba}}
+\subsubsection[{set\+Items}]{\setlength{\rightskip}{0pt plus 5cm}void Prueba\+::set\+Items (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Item} $>$}]{items}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_a0b3baf595028b7aa32b95e2c3c2729ea}
+Cambia la lista de items de la prueba. ~\newline
+ {\bfseries post\+: } this-\/$>$items == items. 
+\begin{DoxyParams}{Parameters}
+{\em items} & -\/ la nueva lista de items de la prueba. items != N\+U\+L\+L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_prueba_ac45d0bc033c8f2b1fd25f10537328ae4}{\index{Prueba@{Prueba}!set\+Pacientes@{set\+Pacientes}}
+\index{set\+Pacientes@{set\+Pacientes}!Prueba@{Prueba}}
+\subsubsection[{set\+Pacientes}]{\setlength{\rightskip}{0pt plus 5cm}void Prueba\+::set\+Pacientes (
+\begin{DoxyParamCaption}
+\item[{{\bf Paciente}}]{paciente}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_ac45d0bc033c8f2b1fd25f10537328ae4}
+Cambia el paciente al que se realizará la prueba. ~\newline
+ {\bfseries post\+: } this-\/$>$paciente == paciente. 
+\begin{DoxyParams}{Parameters}
+{\em paciente} & -\/ el nuevo paciente al cual se le realizará la prueba. prueba != N\+U\+L\+L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_prueba_a682b5c82a1b41741c4e578b63b4b40bd}{\index{Prueba@{Prueba}!set\+Rango@{set\+Rango}}
+\index{set\+Rango@{set\+Rango}!Prueba@{Prueba}}
+\subsubsection[{set\+Rango}]{\setlength{\rightskip}{0pt plus 5cm}void Prueba\+::set\+Rango (
+\begin{DoxyParamCaption}
+\item[{{\bf Rango}}]{rango}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_a682b5c82a1b41741c4e578b63b4b40bd}
+Cambia el rango de la prueba. ~\newline
+ {\bfseries post\+: } this-\/$>$rango == rango. 
+\begin{DoxyParams}{Parameters}
+{\em rango} & -\/ el nuevo rango de la prueba. rango != N\+U\+L\+L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_prueba_a0800d446de537a615de474c270bebd75}{\index{Prueba@{Prueba}!set\+Tiempo@{set\+Tiempo}}
+\index{set\+Tiempo@{set\+Tiempo}!Prueba@{Prueba}}
+\subsubsection[{set\+Tiempo}]{\setlength{\rightskip}{0pt plus 5cm}void Prueba\+::set\+Tiempo (
+\begin{DoxyParamCaption}
+\item[{double}]{tiempo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_prueba_a0800d446de537a615de474c270bebd75}
+Cambia el tiempo de la prueba. ~\newline
+ {\bfseries post\+: } this-\/$>$tiempo == tiempo. 
+\begin{DoxyParams}{Parameters}
+{\em tiempo} & -\/ el nuevo tiempo de realización de la prueba. tiempo $>$= 0. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Prueba.\+hpp\end{DoxyCompactItemize}

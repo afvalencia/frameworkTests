@@ -121,7 +121,7 @@ int PreguntarPrueba(Item I)
 	std::cout<<I.getRespuesta()<<std::endl;
 	std::string R;
 	std::cin>>R;
-	if(R==I.getNombreRespuesta())
+	if(R==I.getNombrePregunta())
 		return 1;
 	else
 		return 0;
@@ -133,7 +133,7 @@ void PreguntarPractica(Item I)
 	std::cout<<I.getRespuesta()<<std::endl;
 	std::string R;
 	std::cin>>R;
-	if(R==I.getNombreRespuesta())
+	if(R==I.getNombrePregunta())
 		std::cout<<"Correcto!"<<std::endl;
 	else
 		std::cout<<"Mal!"<<std::endl;
